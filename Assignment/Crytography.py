@@ -30,7 +30,7 @@ def hill_cipher():
         hill_cipher()
 
     elif user_input == 'd':
-        print('Encytion Method selected\n')
+        print('Decrytion Method selected\n')
         text =  input('Enter the text to be decypted: ').upper()
         key = input('Enter the 4 letter key:  ').upper()
         plaintext = hill_cipher_decryption(text,key)
@@ -49,7 +49,7 @@ def vigenere_cipher():
         vigenere_cipher()
 
     elif user_input == 'd':
-        print('Encytion Method selected\n')
+        print('Decrytion Method selected\n')
         text =  input('Enter the text to be decypted: ')
         key = input('Enter the key:  ')
         plaintext = vigenere_decrypt(text,key)
@@ -69,7 +69,7 @@ def caesar_cipher():
         caesar_cipher()
 
     elif user_input == 'd':
-        print('Encytion Method selected\n')
+        print('Decytion Method selected\n')
         key = int(input('Enter the key (1 - 26): '))
         text =  input('Enter the text to be decypted: ')
         plaintext = caesar_cipher_decrypt(text,key)
@@ -343,10 +343,6 @@ def menu(): # it return user_choice i.e, 1 , 2 , 3
                 print("Invalid input. Please enter a number between 1 and 3.")
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
-
-
-def encrytion():
-    print("hello world 2!!!!")
 
 if __name__ == "__main__":
     main()
